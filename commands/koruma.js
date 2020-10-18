@@ -11,7 +11,7 @@ ${message.guild.owner.user.tag}`))
 
 if(!args[0]) return message.channel.send(nn.setColor('#00001').setTitle('Bir hata oldu!').setDescription(`Koruma açmak istersen **${client.ayarlar.prefix}koruma aç** yazmalısın!`))
 if(args[0] === 'aç') {
-data.set(`korumalar.${message.guild.id}`, 'codare');
+data.set(`korumalar.${message.guild.id}`, 'Code World');
 return message.channel.send(nn.setTitle(`İşte bu kadar!`).setColor('#000001').setDescription(`Koruma sistem başarıyla kuruldu.
 Kapatmak isterseniz, \`${client.ayarlar.prefix}koruma kapat\` yazarak kapatabilirsiniz.
 

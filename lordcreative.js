@@ -4,35 +4,11 @@ const { Client, Util } = require("discord.js");
 const fs = require("fs");
 require("./util/eventLoader")(client);
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 client.ayarlar = { 
 "token": "TOKEN",
 "prefix": "PREFİX",
 "sahip": "SAHİP İD",
 }
-
-
-
-
 
 client.commands = new Discord.Collection();
 client.aliases = new Discord.Collection();
@@ -466,15 +442,5 @@ member.user.send(new Discord.MessageEmbed()
 .setDescription(`>>> \`${guild.name}\` __Sunucusu için, Yeni hesap olduğunuzu tespit ettim. **5 Gün** içerisinde olan hesapları cezalıya atıyorum!__`)
 .addField('• Bilgilendirme', '**Sunucu içerisinde ki yetkililere bildirmelisiniz.**')
 .setColor('#351742'));
-};
-});
-
-client.on('message', async message => {
-  if(message.channel.type !== 'text') return;
-const chimped = await data.fetch(`chimped.${message.guild.id}`);
-if(!chimped) return;
-let command = chimped.find(a => a.command === message.content.toLocaleLowerCase());
-if(command) {
-message.channel.send(`${message.author} ${command.respond}`);
 };
 });
