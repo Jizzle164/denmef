@@ -20,7 +20,7 @@ c!şablon-sistem ┃ c!tag-rol-sistem \`\`\`
 
 - c!korumalar ┃ c!diğer2\`\`\`
 `)
-.setImage(`https://media.giphy.com/media/AugdfgRWOkZetCLCgR/giphy.gif`)
+.setImage(`https://media.giphy.com/media/9JXP79SaAaaqtlAvBE/giphy.gif`)
 
   message.channel.send(embed)
 };
