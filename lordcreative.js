@@ -5,9 +5,9 @@ const fs = require("fs");
 require("./util/eventLoader")(client);
 
 client.ayarlar = { 
-"token": "TOKEN",
-"prefix": "prefix",
-"sahip": "sahipid",
+"token": "Nzk2OTg5MTIzNzM4ODYxNjE5.X_f79g.CshwTjdL4C6eU0n-eNtXKm6FZQ8",
+"prefix": "c!",
+"sahip": "726860430613676132",
 }
 
 client.commands = new Discord.Collection();
